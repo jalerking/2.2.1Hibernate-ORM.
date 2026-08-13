@@ -8,17 +8,16 @@ import java.util.List;
 
 public interface UserService {
 
-    @Transactional
     void add(User user);
 
-    @Transactional
     void add(Car car);
 
-    @Transactional
     void add(User user,Car car);
 
     List<User> listUsers();
 
     List<Car> listCar();
+
+    User findMyCar(String model, int series);
 
 }

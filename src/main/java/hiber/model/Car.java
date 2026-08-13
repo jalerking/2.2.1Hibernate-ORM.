@@ -54,12 +54,12 @@ public class Car {
         this.series = series;
     }
 
-//    public User getUsers() {
-//        return user;
-//    }
-//
-//    public void setUsers(User users) {
-//        this.user = users;
-//    }
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", series=" + series +
+                '}';
+    }
 }

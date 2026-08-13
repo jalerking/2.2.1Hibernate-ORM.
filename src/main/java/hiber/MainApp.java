@@ -37,7 +37,8 @@ public class MainApp {
             }
             System.out.println();
         }
-
+        System.out.println(userService.findMyCar("model2", 222));
+        System.out.println();
         context.close();
     }
 }
